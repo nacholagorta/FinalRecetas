@@ -1,0 +1,6 @@
+framework module Pods_Pimpam {
+  umbrella header "Pods-Pimpam-umbrella.h"
+
+  export *
+  module * { export * }
+}

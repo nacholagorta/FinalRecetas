@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D6122A398C95955B237E7A /* Pods_Pimpam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD090830C1228A8D9AD4CC75 /* Pods_Pimpam.framework */; };
 		DD57E66521AEA428004475CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E66421AEA428004475CD /* AppDelegate.swift */; };
 		DD57E66721AEA428004475CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E66621AEA428004475CD /* ViewController.swift */; };
-		DD57E66A21AEA428004475CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57E66821AEA428004475CD /* Main.storyboard */; };
 		DD57E66C21AEA42A004475CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57E66B21AEA42A004475CD /* Assets.xcassets */; };
 		DD57E66F21AEA42A004475CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57E66D21AEA42A004475CD /* LaunchScreen.storyboard */; };
+		DD57E67A21AEA844004475CD /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E67821AEA844004475CD /* PrincipalViewController.swift */; };
+		DD57E67B21AEA844004475CD /* PrincipalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD57E67921AEA844004475CD /* PrincipalViewController.xib */; };
+		DD57E68521AEAD5B004475CD /* PrincipalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E68321AEAD5B004475CD /* PrincipalTableViewCell.swift */; };
+		DD57E68621AEAD5B004475CD /* PrincipalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD57E68421AEAD5B004475CD /* PrincipalTableViewCell.xib */; };
+		DD57E68821AEB6CE004475CD /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E68721AEB6CE004475CD /* Types.swift */; };
+		DD57E69021AED0DE004475CD /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E68E21AED0DE004475CD /* RecipesListViewController.swift */; };
+		DD57E69121AED0DE004475CD /* RecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD57E68F21AED0DE004475CD /* RecipesListViewController.xib */; };
+		DD57E69521AED137004475CD /* RecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E69321AED137004475CD /* RecipesCell.swift */; };
+		DD57E69621AED137004475CD /* RecipesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD57E69421AED137004475CD /* RecipesCell.xib */; };
+		DD57E69821AED2D0004475CD /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E69721AED2D0004475CD /* Recipes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112E6A791CD6766E1F42AEB8 /* Pods-Pimpam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pimpam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pimpam/Pods-Pimpam.release.xcconfig"; sourceTree = "<group>"; };
+		3EE3C156ADF9AE8830E76A2A /* Pods-Pimpam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pimpam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pimpam/Pods-Pimpam.debug.xcconfig"; sourceTree = "<group>"; };
+		BD090830C1228A8D9AD4CC75 /* Pods_Pimpam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pimpam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD57E66121AEA428004475CD /* Pimpam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pimpam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD57E66421AEA428004475CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD57E66621AEA428004475CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD57E66921AEA428004475CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD57E66B21AEA42A004475CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD57E66E21AEA42A004475CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD57E67021AEA42A004475CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD57E67821AEA844004475CD /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
+		DD57E67921AEA844004475CD /* PrincipalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrincipalViewController.xib; sourceTree = "<group>"; };
+		DD57E68321AEAD5B004475CD /* PrincipalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalTableViewCell.swift; sourceTree = "<group>"; };
+		DD57E68421AEAD5B004475CD /* PrincipalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrincipalTableViewCell.xib; sourceTree = "<group>"; };
+		DD57E68721AEB6CE004475CD /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		DD57E68E21AED0DE004475CD /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		DD57E68F21AED0DE004475CD /* RecipesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesListViewController.xib; sourceTree = "<group>"; };
+		DD57E69321AED137004475CD /* RecipesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCell.swift; sourceTree = "<group>"; };
+		DD57E69421AED137004475CD /* RecipesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesCell.xib; sourceTree = "<group>"; };
+		DD57E69721AED2D0004475CD /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D6122A398C95955B237E7A /* Pods_Pimpam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1D7A77FED08AB7E6B322EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EE3C156ADF9AE8830E76A2A /* Pods-Pimpam.debug.xcconfig */,
+				112E6A791CD6766E1F42AEB8 /* Pods-Pimpam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD7075D50F9439516FB0F53C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD090830C1228A8D9AD4CC75 /* Pods_Pimpam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD57E65821AEA428004475CD = {
 			isa = PBXGroup;
 			children = (
 				DD57E66321AEA428004475CD /* Pimpam */,
 				DD57E66221AEA428004475CD /* Products */,
+				9B1D7A77FED08AB7E6B322EE /* Pods */,
+				AD7075D50F9439516FB0F53C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +96,79 @@
 		DD57E66321AEA428004475CD /* Pimpam */ = {
 			isa = PBXGroup;
 			children = (
+				DD57E67C21AEA8CD004475CD /* Cells */,
+				DD57E67721AEA788004475CD /* Model */,
+				DD57E67621AEA5F0004475CD /* ViewController */,
 				DD57E66421AEA428004475CD /* AppDelegate.swift */,
 				DD57E66621AEA428004475CD /* ViewController.swift */,
-				DD57E66821AEA428004475CD /* Main.storyboard */,
 				DD57E66B21AEA42A004475CD /* Assets.xcassets */,
 				DD57E66D21AEA42A004475CD /* LaunchScreen.storyboard */,
 				DD57E67021AEA42A004475CD /* Info.plist */,
 			);
 			path = Pimpam;
+			sourceTree = "<group>";
+		};
+		DD57E67621AEA5F0004475CD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E68921AED002004475CD /* RecipesListViewController */,
+				DD57E68221AEAD38004475CD /* PrincipalViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DD57E67721AEA788004475CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E68721AEB6CE004475CD /* Types.swift */,
+				DD57E69721AED2D0004475CD /* Recipes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD57E67C21AEA8CD004475CD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E69221AED0F7004475CD /* RecipesViewCell */,
+				DD57E68121AEAD22004475CD /* PrincipalViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD57E68121AEAD22004475CD /* PrincipalViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E68321AEAD5B004475CD /* PrincipalTableViewCell.swift */,
+				DD57E68421AEAD5B004475CD /* PrincipalTableViewCell.xib */,
+			);
+			path = PrincipalViewCell;
+			sourceTree = "<group>";
+		};
+		DD57E68221AEAD38004475CD /* PrincipalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E67821AEA844004475CD /* PrincipalViewController.swift */,
+				DD57E67921AEA844004475CD /* PrincipalViewController.xib */,
+			);
+			path = PrincipalViewController;
+			sourceTree = "<group>";
+		};
+		DD57E68921AED002004475CD /* RecipesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E68E21AED0DE004475CD /* RecipesListViewController.swift */,
+				DD57E68F21AED0DE004475CD /* RecipesListViewController.xib */,
+			);
+			path = RecipesListViewController;
+			sourceTree = "<group>";
+		};
+		DD57E69221AED0F7004475CD /* RecipesViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E69321AED137004475CD /* RecipesCell.swift */,
+				DD57E69421AED137004475CD /* RecipesCell.xib */,
+			);
+			path = RecipesViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD57E67321AEA42A004475CD /* Build configuration list for PBXNativeTarget "Pimpam" */;
 			buildPhases = (
+				FF523F6BFF0419D4100B09FD /* [CP] Check Pods Manifest.lock */,
 				DD57E65D21AEA428004475CD /* Sources */,
 				DD57E65E21AEA428004475CD /* Frameworks */,
 				DD57E65F21AEA428004475CD /* Resources */,
+				0DC1202E1787603B3981C6DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,20 +231,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD57E69121AED0DE004475CD /* RecipesListViewController.xib in Resources */,
+				DD57E68621AEAD5B004475CD /* PrincipalTableViewCell.xib in Resources */,
 				DD57E66F21AEA42A004475CD /* LaunchScreen.storyboard in Resources */,
+				DD57E69621AED137004475CD /* RecipesCell.xib in Resources */,
+				DD57E67B21AEA844004475CD /* PrincipalViewController.xib in Resources */,
 				DD57E66C21AEA42A004475CD /* Assets.xcassets in Resources */,
-				DD57E66A21AEA428004475CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DC1202E1787603B3981C6DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pimpam/Pods-Pimpam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pimpam/Pods-Pimpam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF523F6BFF0419D4100B09FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pimpam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD57E65D21AEA428004475CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD57E68521AEAD5B004475CD /* PrincipalTableViewCell.swift in Sources */,
+				DD57E67A21AEA844004475CD /* PrincipalViewController.swift in Sources */,
+				DD57E69021AED0DE004475CD /* RecipesListViewController.swift in Sources */,
+				DD57E69821AED2D0004475CD /* Recipes.swift in Sources */,
 				DD57E66721AEA428004475CD /* ViewController.swift in Sources */,
+				DD57E68821AEB6CE004475CD /* Types.swift in Sources */,
+				DD57E69521AED137004475CD /* RecipesCell.swift in Sources */,
 				DD57E66521AEA428004475CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +300,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD57E66821AEA428004475CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD57E66921AEA428004475CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD57E66D21AEA42A004475CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +427,7 @@
 		};
 		DD57E67421AEA42A004475CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE3C156ADF9AE8830E76A2A /* Pods-Pimpam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +445,7 @@
 		};
 		DD57E67521AEA42A004475CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112E6A791CD6766E1F42AEB8 /* Pods-Pimpam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
