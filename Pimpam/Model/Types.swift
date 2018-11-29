@@ -9,13 +9,16 @@ import Foundation
 class Types {
     var name: String!
     var description: String!
-    var numplats: String!
+    var numplats: Int!
     var foodimg: String!
+    var recypes : [Recipes]!
     
-    init(name: String, description: String, numplats: String, foodimg: String) {
+    
+    init(name: String, description: String, numplats: Int, foodimg: String, recypes: [Recipes]) {
         self.name = name
         self.description = description
         self.numplats = numplats
         self.foodimg = foodimg
+        self.recypes = recypes
     }
 }

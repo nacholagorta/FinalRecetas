@@ -12,6 +12,7 @@ import SDWebImage
 class PrincipalViewController: UIViewController {
     @IBOutlet weak var recipesTable: UITableView!
     internal var types: [Types] = []
+
     
     convenience init(types:[Types]){
         self.init()
@@ -23,9 +24,9 @@ class PrincipalViewController: UIViewController {
         registerCells()
         loadAllTypes()
         self.title = NSLocalizedString("Tipos" , comment: "")
-
         // Do any additional setup after loading the view.
     }
+    
     
     private func registerCells ()
     {
@@ -39,14 +40,23 @@ class PrincipalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     private func loadAllTypes(){
-        let meat = Types(name: "Carnes", description: "Las mejores recetas carnicas", numplats: "50", foodimg: "https://i.pinimg.com/236x/69/b2/73/69b27355445cb6e33b35cced3269ecd6--remember-this-cow.jpg")
-        let fish = Types(name: "Pescado", description: "Bueno para el cerebro", numplats: "50", foodimg: "https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/11/bob-esponja.png")
-         let poultry = Types(name: "Aves", description: "Mejores aves de corral", numplats: "50", foodimg: "https://http2.mlstatic.com/anteojos-cotillon-para-chicos-chicken-little-disney-D_NQ_NP_816367-MLA25631189073_052017-F.jpg")
-         let vegetables = Types(name: "Vegetales", description: "Para los locos vegetarianos", numplats: "50", foodimg: "https://vignette.wikia.nocookie.net/ideas/images/3/3a/Mochilo_%28_los_fruittis_%29.jpg")
-         let salads = Types(name: "Ensaladas", description: "Para esos kilitos de más", numplats: "50", foodimg: "https://upload.wikimedia.org/wikipedia/it/thumb/5/51/Saladfinger.jpg/260px-Saladfinger.jpg")
-         let pasta = Types(name: "Pasta", description: "Para esos pisos de estudiantes", numplats: "50", foodimg: "https://images.vectorhq.com/images/istock/previews/4975/49759696-cartoon-gross-spaghetti-monster.jpg")
-         let soups = Types(name: "Sopas", description: "Para las abuelas más modernas", numplats: "50", foodimg: "https://i.pinimg.com/originals/e4/ea/1b/e4ea1b28dd32c6f071c3086f4129ce3b.jpg")
-         let desserts = Types(name: "Postres", description: "Abstenerse Celiacos y diabeticos", numplats: "50", foodimg: "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_1100/qslcamn8sc7913wrmvkn")
+                    let meat1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+                    let meat2 = Recipes (name: "HOLA", difficult: "MEDIO", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg")
+        let meat = Types(name: "Carnes", description: "Las mejores recetas carnicas", numplats: 1, foodimg: "https://i.pinimg.com/236x/69/b2/73/69b27355445cb6e33b35cced3269ecd6--remember-this-cow.jpg", recypes: [meat1, meat2])
+                    let fish1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg")
+        let fish = Types(name: "Pescado", description: "Bueno para el cerebro", numplats: 1, foodimg: "https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/11/bob-esponja.png", recypes: [fish1])
+                        let poultry1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+        let poultry = Types(name: "Aves", description: "Mejores aves de corral", numplats: 1, foodimg: "https://http2.mlstatic.com/anteojos-cotillon-para-chicos-chicken-little-disney-D_NQ_NP_816367-MLA25631189073_052017-F.jpg", recypes:[poultry1])
+                        let vegetables1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+         let vegetables = Types(name: "Vegetales", description: "Para los locos vegetarianos", numplats: 1, foodimg: "https://vignette.wikia.nocookie.net/ideas/images/3/3a/Mochilo_%28_los_fruittis_%29.jpg", recypes:[vegetables1])
+                        let salads1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+         let salads = Types(name: "Ensaladas", description: "Para esos kilitos de más", numplats: 1, foodimg: "https://upload.wikimedia.org/wikipedia/it/thumb/5/51/Saladfinger.jpg/260px-Saladfinger.jpg", recypes:[salads1])
+                        let pasta1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+         let pasta = Types(name: "Pasta", description: "Para esos pisos de estudiantes", numplats: 1, foodimg: "https://images.vectorhq.com/images/istock/previews/4975/49759696-cartoon-gross-spaghetti-monster.jpg", recypes:[pasta1])
+                        let soups1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+        let soups = Types(name: "Sopas", description: "Para las abuelas más modernas", numplats: 1, foodimg: "https://i.pinimg.com/originals/e4/ea/1b/e4ea1b28dd32c6f071c3086f4129ce3b.jpg", recypes:[soups1])
+                        let desserts1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+        let desserts = Types(name: "Postres", description: "Abstenerse Celiacos y diabeticos", numplats: 1, foodimg: "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_1100/qslcamn8sc7913wrmvkn",recypes:[desserts1])
         types.append(meat)
         types.append(fish)
         types.append(poultry)
@@ -84,12 +94,13 @@ extension PrincipalViewController: UITableViewDelegate,UITableViewDataSource
         let type = types[indexPath.row]
         cell.titlelabel?.text = type.name
         cell.descriptionlabel?.text = type.description
-        cell.numberlabel?.text = type.numplats
+        cell.numberlabel?.text = String(type.numplats)
         cell.foodimg?.sd_setImage(with: URL(string: type.foodimg), completed: nil)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recVC = RecipesListViewController()
+       let myCategory = types[indexPath.row]
+        let recVC = RecipesListViewController(recypes: myCategory.recypes)
         navigationController?.pushViewController(recVC, animated: true)
     }
 }

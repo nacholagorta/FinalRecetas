@@ -24,10 +24,6 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-ia-WGX">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="647" id="0nj-mZ-phR"/>
-                        <constraint firstAttribute="width" constant="375" id="vKP-5t-mdy"/>
-                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="0ys-Lu-bdB"/>
                         <outlet property="delegate" destination="-1" id="Geu-Wp-Tz8"/>
@@ -36,10 +32,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="n6e-ia-WGX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4gJ-zs-rvd"/>
-                <constraint firstItem="n6e-ia-WGX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4rT-Fq-id7"/>
-                <constraint firstItem="n6e-ia-WGX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="A8R-n7-rPC"/>
-                <constraint firstItem="n6e-ia-WGX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P3H-1v-Fb0"/>
+                <constraint firstItem="n6e-ia-WGX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KwF-IX-Qgl"/>
+                <constraint firstItem="n6e-ia-WGX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rw1-8q-9Yj"/>
+                <constraint firstAttribute="trailing" secondItem="n6e-ia-WGX" secondAttribute="trailing" id="avR-O2-ok8"/>
+                <constraint firstItem="n6e-ia-WGX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="dVP-D2-57e"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="42.5" y="58.5"/>
