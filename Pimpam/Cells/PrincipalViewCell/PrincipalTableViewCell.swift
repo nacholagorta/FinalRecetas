@@ -16,6 +16,12 @@ class PrincipalTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        titlelabel?.layer.cornerRadius = 10
+        titlelabel?.layer.masksToBounds = true
+        descriptionlabel?.layer.cornerRadius = 10
+        descriptionlabel?.layer.masksToBounds = true
+        numberlabel?.layer.cornerRadius = 10
+        numberlabel?.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

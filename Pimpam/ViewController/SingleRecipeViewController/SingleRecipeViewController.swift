@@ -10,13 +10,23 @@ import UIKit
 
 
 class SingleRecipeViewController: UIViewController {
+    var recypes:Recipes!
     @IBOutlet weak var singleRecipeImg : UIImageView!
     @IBOutlet weak var singleNameLbl : UILabel!
     @IBOutlet weak var singleIngredientsLbl : UILabel!
     @IBOutlet weak var singleDifficultyLbl : UILabel!
+    
+    convenience init(recypes:Recipes){
+        self.init()
+        self.recypes = recypes
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        singleNameLbl.text = recypes.recipeTitle
+        singleDifficultyLbl.text = recypes.recipeDifficulty
+        singleIngredientsLbl.text = recypes.recipeIngredients
+        singleRecipeImg?.sd_setImage(with: URL(string: recypes.recipeImg)!, completed: nil)
         // Do any additional setup after loading the view.
     }
 

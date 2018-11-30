@@ -106,7 +106,8 @@ extension RecipesListViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recVC = SingleRecipeViewController()
+    let myRecepies = recypes[indexPath.row]
+        let recVC = SingleRecipeViewController(recypes: myRecepies)
         navigationController?.pushViewController(recVC, animated: true)
     }
 }

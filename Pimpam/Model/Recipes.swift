@@ -11,10 +11,12 @@ class Recipes {
     var recipeTitle: String!
     var recipeDifficulty: String!
     var recipeImg: String!
+    var recipeIngredients:String!
     
-    init(recipeTitle: String, recipeDifficulty: String, recipeImg: String) {
+    init(recipeTitle: String, recipeDifficulty: String, recipeImg: String,recipeIngredients: String) {
         self.recipeTitle = recipeTitle
         self.recipeDifficulty = recipeDifficulty
         self.recipeImg = recipeImg
+        self.recipeIngredients = recipeIngredients
     }
 }
