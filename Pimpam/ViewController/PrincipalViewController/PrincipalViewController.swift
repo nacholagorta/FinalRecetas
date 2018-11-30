@@ -40,23 +40,31 @@ class PrincipalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     private func loadAllTypes(){
-                    let meat1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-                    let meat2 = Recipes (name: "HOLA", difficult: "MEDIO", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg")
-        let meat = Types(name: "Carnes", description: "Las mejores recetas carnicas", numplats: 1, foodimg: "https://i.pinimg.com/236x/69/b2/73/69b27355445cb6e33b35cced3269ecd6--remember-this-cow.jpg", recypes: [meat1, meat2])
-                    let fish1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg")
-        let fish = Types(name: "Pescado", description: "Bueno para el cerebro", numplats: 1, foodimg: "https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/11/bob-esponja.png", recypes: [fish1])
-                        let poultry1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-        let poultry = Types(name: "Aves", description: "Mejores aves de corral", numplats: 1, foodimg: "https://http2.mlstatic.com/anteojos-cotillon-para-chicos-chicken-little-disney-D_NQ_NP_816367-MLA25631189073_052017-F.jpg", recypes:[poultry1])
-                        let vegetables1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-         let vegetables = Types(name: "Vegetales", description: "Para los locos vegetarianos", numplats: 1, foodimg: "https://vignette.wikia.nocookie.net/ideas/images/3/3a/Mochilo_%28_los_fruittis_%29.jpg", recypes:[vegetables1])
-                        let salads1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-         let salads = Types(name: "Ensaladas", description: "Para esos kilitos de más", numplats: 1, foodimg: "https://upload.wikimedia.org/wikipedia/it/thumb/5/51/Saladfinger.jpg/260px-Saladfinger.jpg", recypes:[salads1])
-                        let pasta1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-         let pasta = Types(name: "Pasta", description: "Para esos pisos de estudiantes", numplats: 1, foodimg: "https://images.vectorhq.com/images/istock/previews/4975/49759696-cartoon-gross-spaghetti-monster.jpg", recypes:[pasta1])
-                        let soups1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-        let soups = Types(name: "Sopas", description: "Para las abuelas más modernas", numplats: 1, foodimg: "https://i.pinimg.com/originals/e4/ea/1b/e4ea1b28dd32c6f071c3086f4129ce3b.jpg", recypes:[soups1])
-                        let desserts1 = Recipes(name : "Hamburguesa del sur", difficult : "Básico", foodrecipesimg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
-        let desserts = Types(name: "Postres", description: "Abstenerse Celiacos y diabeticos", numplats: 1, foodimg: "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_1100/qslcamn8sc7913wrmvkn",recypes:[desserts1])
+        let meat1 = Recipes(recipeTitle : "Hamburguesa del sur", recipeDifficulty : "Básico", recipeImg: "https://sevilla.abc.es/gurme//wp-content/uploads/2013/01/hamburguesa-carne-picada-1440x810.jpg" )
+        let meat2 = Recipes(recipeTitle : "Pastel de carne con patatas", recipeDifficulty : "Difícil", recipeImg: "https://cdn5.recetasdeescandalo.com/wp-content/uploads/2017/10/Pastel-de-carne-picada-y-patata-con-queso.jpg" )
+        let meat = Types(name: "Carnes", description: "No se admiten Veganos", numplats: 2, foodimg: "https://www.supertambo.es/web/tambo/img/noticias/26/tipos-de-carne-y-sus-caracteristicas-grande.jpg", arrRecipes: [meat1, meat2] )
+        let fish1 = Recipes(recipeTitle : "Pescadito empanado", recipeDifficulty : "Medio", recipeImg: "https://img.taste.com.au/KFln5Pso/w506-h253-cfill/taste/2016/11/lentil-rice-with-turmeric-fish-76468-1.jpeg" )
+        let fish2 = Recipes(recipeTitle : "Salmón con ensalada de piña", recipeDifficulty : "Difícil", recipeImg: "https://www.chatelaine.com/wp-content/uploads/2017/05/barbecued-trout-1.jpg" )
+        let fish = Types(name: "Pescado", description: "Tirar la caña", numplats: 2, foodimg:"https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/08/23/Photos/Processed/fish-k8KF--621x414@LiveMint.jpg", arrRecipes: [fish1, fish2])
+        let poultry1 = Recipes(recipeTitle : "Muslos de pollo con salsa", recipeDifficulty : "Básico", recipeImg: "http://images.media-allrecipes.com/images/75769.jpg" )
+        let poultry2 = Recipes(recipeTitle : "Pollo asado al limón", recipeDifficulty : "Medio", recipeImg: "https://whatscookingamerica.net/wp-content/uploads/2015/03/TuscanChicken23.jpg" )
+        let poultry = Types(name: "Aves", description: "Por si comes pájaros", numplats: 2, foodimg:"https://thumbs.dreamstime.com/t/aves-de-corral-del-palillo-cocidas-en-horno-87236106.jpg", arrRecipes: [poultry1, poultry2])
+        let vegetables1 = Recipes(recipeTitle : "Sofrito de verduras", recipeDifficulty : "Medio", recipeImg: "https://assets.kraftfoods.com/recipe_images/opendeploy/191228_640x428.jpg" )
+        let vegetables2 = Recipes(recipeTitle : "Pimientos fritos", recipeDifficulty : "Fácil", recipeImg: "https://www.leannebrown.com/wp-content/uploads/2015/04/cornmeal-crusted-green-beans-1024x680.jpeg.pagespeed.ce.-WB2Wndsu7.jpg" )
+        let vegetables = Types(name:"Verduras" , description: "Por si eres sano", numplats:2 , foodimg: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/22/10/istock-683044558.jpg?w968h681", arrRecipes: [vegetables1, vegetables2] )
+        let salads1 = Recipes(recipeTitle : "Ensalada Stir-Fry", recipeDifficulty : "Básico", recipeImg: "https://www.cscassets.com/recipes/wide_cknew/wide_51129.jpg" )
+        let salads2 = Recipes(recipeTitle : "Ensalada de raviolis y verdura", recipeDifficulty : "Medio", recipeImg: "http://relish.com/wp-content/uploads/2011/01/skillet_ravioli_final-655x405.jpg" )
+        let salads = Types(name:"Ensaladas" , description: "Por si eres más sano todavía", numplats: 2, foodimg: "https://life-in-the-lofthouse.com/wp-content/uploads/2017/06/Chicken-Caesar-Salad4.gif", arrRecipes: [salads1, salads2] )
+        let pasta1 = Recipes(recipeTitle : "Macarrones con tomate", recipeDifficulty : "Medio", recipeImg: "https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Tomato-and-Spinach-Pasta-skillet-1-380x380.jpg" )
+        let pasta2 = Recipes(recipeTitle : "Lazos", recipeDifficulty : "Fácil", recipeImg: "https://shewearsmanyhats.com/wp-content/uploads/2009/08/creamy-pesto-pasta-new4.jpg" )
+        let pasta = Types(name: "Pasta", description: "Mamma mia italiani style", numplats:2 , foodimg: "https://www.gallinablanca.es/files/thumbs/ef02623ee0bc71cfe62c1e82ee2f291948576d03_r900_480_2.jpg", arrRecipes: [pasta1, pasta2] )
+        let soups1 = Recipes(recipeTitle : "Sopa TGB", recipeDifficulty : "Medio", recipeImg: "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/recipe-image-legacy-id-1074500_11.jpg" )
+        let soups2 = Recipes(recipeTitle : "Sopa de pescado", recipeDifficulty : "Difícil", recipeImg: "https://www.simplyrecipes.com/wp-content/uploads/2016/02/dads-fish-stew-vertical-a-1600.jpg" )
+        let soups = Types(name: "Sopas", description: "Sopitas que ni tu yaya", numplats: 2, foodimg: "https://www.seriouseats.com/recipes/images/2017/12/20171115-chicken-soup-vicky-wasik-11-1500x1125.jpg", arrRecipes: [soups1, soups2] )
+        let desserts1 = Recipes(recipeTitle : "Tarta de chocolate blanco con oreo", recipeDifficulty : "Difícil", recipeImg: "http://static.kidspot.com.au/recipe_asset/1385/img-4962.jpg-20150505010814~q75,dx720y432u1r1gg,c--.jpg" )
+        let desserts2 = Recipes(recipeTitle : "Tarta de naranja", recipeDifficulty : "Difícil", recipeImg: "https://hips.hearstapps.com/del.h-cdn.co/assets/17/06/1600x800/landscape-1486420115-delish-banana-pudding-poke-cake-11.jpg?resize=480:*" )
+        let desserts = Types(name: "Postres", description: "Lo mehó de lo mehó", numplats: 2, foodimg: "https://images-gmi-pmc.edge-generalmills.com/817d708a-33e6-46f7-b985-0360b6c55cf4.jpg", arrRecipes: [desserts1, desserts2])
+        
         types.append(meat)
         types.append(fish)
         types.append(poultry)
@@ -100,7 +108,7 @@ extension PrincipalViewController: UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let myCategory = types[indexPath.row]
-        let recVC = RecipesListViewController(recypes: myCategory.recypes)
+        let recVC = RecipesListViewController(recypes: myCategory.arrRecipes)
         navigationController?.pushViewController(recVC, animated: true)
     }
 }

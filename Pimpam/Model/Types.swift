@@ -11,14 +11,14 @@ class Types {
     var description: String!
     var numplats: Int!
     var foodimg: String!
-    var recypes : [Recipes]!
+    var arrRecipes : [Recipes]!
     
     
-    init(name: String, description: String, numplats: Int, foodimg: String, recypes: [Recipes]) {
+    init(name: String, description: String, numplats: Int, foodimg: String, arrRecipes: [Recipes]) {
         self.name = name
         self.description = description
         self.numplats = numplats
         self.foodimg = foodimg
-        self.recypes = recypes
+        self.arrRecipes = arrRecipes
     }
 }

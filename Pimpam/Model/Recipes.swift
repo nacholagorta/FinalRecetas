@@ -8,13 +8,13 @@
 
 import Foundation
 class Recipes {
-    var name: String!
-    var difficult: String!
-    var foodrecipesimg: String!
+    var recipeTitle: String!
+    var recipeDifficulty: String!
+    var recipeImg: String!
     
-    init(name: String, difficult: String, foodrecipesimg: String) {
-        self.name = name
-        self.difficult = difficult
-        self.foodrecipesimg = foodrecipesimg
+    init(recipeTitle: String, recipeDifficulty: String, recipeImg: String) {
+        self.recipeTitle = recipeTitle
+        self.recipeDifficulty = recipeDifficulty
+        self.recipeImg = recipeImg
     }
 }

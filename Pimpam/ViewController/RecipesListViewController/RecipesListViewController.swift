@@ -9,9 +9,11 @@
 import UIKit
 import SDWebImage
 class RecipesListViewController: UIViewController {
+    
     @IBOutlet weak var listrecipes : UITableView!
     internal var recypes: [Recipes] = []
-    
+    internal var recipesFiltered: [Recipes] = []
+    let searchController = UISearchController(searchResultsController: nil)
 
     convenience init(recypes:[Recipes]){
         self.init()
@@ -29,7 +31,28 @@ class RecipesListViewController: UIViewController {
         self.title = NSLocalizedString("Categorias", comment: "")
         registerCells()
         
-        // Do any additional setup after loading the view.
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search..."
+        searchController.searchBar.backgroundColor = UIColor.white
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        navigationItem.hidesSearchBarWhenScrolling = false
+    }
+    
+    internal func searchBarIsEmpty() -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    internal func isFiltering() -> Bool{
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    internal func filterContentForSearchText(_ searchText: String){
+        recipesFiltered = recypes.filter({ (xRecipes: Recipes ) -> Bool in
+            return (xRecipes.recipeTitle.lowercased().contains(searchText.lowercased()))
+        })
+        listrecipes.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,27 +77,41 @@ extension RecipesListViewController: UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recypes.count
+        if isFiltering(){
+            return recipesFiltered.count
+        }
+        else{
+            return recypes.count
+            
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        return 120.0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: RecipesCell = (tableView.dequeueReusableCell(withIdentifier: "RecipesCell", for: indexPath) as? RecipesCell)!
-         let actore = recypes[indexPath.row]
-        cell.titlelabel?.text = actore.name
-        cell.difficultlabel?.text = actore.difficult
-        cell.foodrecipeimg?.sd_setImage(with: URL(string: actore.foodrecipesimg), completed: nil)
+        if isFiltering(){
+            let recipe = recipesFiltered[indexPath.row]
+            cell.titlelabel?.text = recipe.recipeTitle
+            cell.difficultlabel?.text = recipe.recipeDifficulty
+            cell.foodrecipeimg?.sd_setImage(with: URL(string: recipe.recipeImg), completed: nil)
+        }
+        else{
+            let recipe = recypes[indexPath.row]
+            cell.titlelabel?.text = recipe.recipeTitle
+            cell.difficultlabel?.text = recipe.recipeDifficulty
+            cell.foodrecipeimg?.sd_setImage(with: URL(string: recipe.recipeImg), completed: nil)
+        }
+        
         return cell
-        
-        
-        
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recVC = RecipesListViewController()
+        let recVC = SingleRecipeViewController()
         navigationController?.pushViewController(recVC, animated: true)
     }
-    
-    
 }
-
+extension RecipesListViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
